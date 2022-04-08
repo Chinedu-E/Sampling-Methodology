@@ -1,0 +1,7 @@
+kivy
+numpy
+pandas
+scipy
+sympy
+tex2pix
+matplotlib

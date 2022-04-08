@@ -1,0 +1,37 @@
+#:kivy 1.0
+<ClusterScreen>:
+    GridLayout:
+        rows: 2
+        Button:
+            text: 'Main Menu'
+            size_hint: .3, .3
+            on_press: root.change_screen(self)
+        BoxLayout:
+            orientation: 'vertical'
+            Label:
+                text: 'my text'
+            GridLayout:
+                rows: 3
+                Button:
+                    text: 'Estimate proportion'
+                Button:
+                    text: 'Estimate mean'
+                Button:
+                    text: 'Estimate total'
+                Button:
+                    text: 'Estimate t'
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint: .5, 1
+            Label:
+                text: 'X'
+            TextInput:
+                text: 'Enter values for x, seperated by comas'
+                input_filter: 'float'
+                height: 50
+            TextInput:
+                text: 'Enter values for y, seperated by comas'
+                input_filter: 'float'
+                height: 50
+
+
